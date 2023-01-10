@@ -1,4 +1,4 @@
-FROM rust:lastest as build
+FROM rust:latest as build
 COPY ./ ./
 WORKDIR /app
 RUN cargo build --release
